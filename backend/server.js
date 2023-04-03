@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const app = require('./app');
 
-dotenv.config({path: '../Vars/config.env'});
+dotenv.config({path: './Vars/config.env'});
 // console.log(process.env);
 
 
