@@ -4,16 +4,30 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server"
+    "start": "nodemon server",
+    "build": "webpack --config webpack.config.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.1",
+    "browserify-zlib": "^0.2.0",
     "cors": "^2.8.5",
+    "crypto-browserify": "^3.12.0",
     "dotenv": "^16.0.0",
     "express": "^4.17.2",
     "mongoose": "^6.1.10",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "path-browserify": "^1.0.1",
+    "querystring": "^0.2.1",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "babel-loader": "^9.1.2",
+    "stream-browserify": "^3.0.0",
+    "webpack": "^5.77.0",
+    "webpack-cli": "^5.0.1"
   }
 }
